@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>good morning, sunshine 🌅</title>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- ============ SKY BACKGROUND (always behind everything) ============ -->
+<div class="sky" id="sky">
+  <div class="stars" id="stars"></div>
+  <div class="sun" id="sun"></div>
+  <div class="clouds" id="clouds"></div>
+</div>
+ 
+<!-- ============ ENVELOPE INTRO SCREEN ============ -->
+<div class="envelope-screen" id="envelopeScreen">
+  <div class="envelope" id="envelope">
+    <div class="envelope-back"></div>
+    <div class="envelope-letter-peek"></div>
+    <div class="envelope-flap"></div>
+    <div class="wax-seal" id="waxSeal">
+      <span>♡</span>
+    </div>
+    <div class="envelope-front-left"></div>
+    <div class="envelope-front-right"></div>
+  </div>
+  <p class="tap-hint">tap the envelope, babygirl</p>
+</div>
+ 
+<!-- ============ MAIN CONTENT ============ -->
+<main class="content" id="mainContent">
+ 
+  <!-- floating hearts spawn container -->
+  <div class="heart-layer" id="heartLayer"></div>
+ 
+  <!-- ===== HERO / LETTER ===== -->
+  <section class="hero">
+    <p class="eyebrow">for my bae</p>
+    <h1 class="hero-title">wakei wakei darling, <span class="script">love you</span></h1>
+ 
+    <div class="letter-card" id="letterCard">
+      <div class="letter-card-topline"></div>
+      <p class="letter-date">(4am and i am rn just thinking of you)</p>
+ 
+      <div class="letter-body" id="letterBody">
+        <!-- 👇👇👇  👇👇👇 -->
+        <p>hello bbg. so youre awake hmmmm, good morning🙈 (prolly m toh so rha hounga rn). i wanna say that i love you a lot, tho i have said this idk how many times but it feels less no matter how much i say words cannot express the feelings i have for you</p>
+        <p> i wanna see you walking up, i wanna see you sleeping, i wanna cuddle with you, i just wanna love you more and more. youre my first and last thought of the day,  </p>
+        <p> i just wanna wake up next to you for my whole life, idc if we have to go thru this short time ldr, it doesnt matter unless i have you. no distance can resist me to not think of you. promise me to be mine forever</p>
+        <!-- 👆👆👆 👆👆👆 -->
+      </div>
+ 
+      <div class="letter-signature">
+        <span class="script">yours, always
+        </span>
+      </div>
+    </div>
+ 
+    <div class="scroll-cue" id="scrollCue">
+      <span>scroll here pls</span>
+      <div class="scroll-cue-line"></div>
+    </div>
+  </section>
+ 
+  <!-- ===== PHOTO GALLERY ===== -->
+  <section class="gallery">
+    <p class="eyebrow center">the moments that keep playing in my mind dont ever wanna forget these feelings</p>
+    <h2 class="gallery-title">ilysm</h2>
+ 
+    <div class="polaroid-grid">
+ 
+      <figure class="polaroid p1">
+        <div class="polaroid-photo">
+          <img src="photo1.jpeg" alt="photo of her, moment one" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="img-placeholder-label">photo1.jpeg</div>
+        </div>
+        <!-- 👇 edit this caption -->
+        <figcaption>i just love the vibe you carry</figcaption>
+      </figure>
+ 
+      <figure class="polaroid p2">
+        <div class="polaroid-photo">
+          <img src="photo2.jpeg" alt="photo of her, moment two" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="img-placeholder-label">photo2.jpg</div>
+        </div>
+        <figcaption>dont we look good together?</figcaption>
+      </figure>
+ 
+      <figure class="polaroid p3">
+        <div class="polaroid-photo">
+          <img src="photo3.jpeg" alt="photo of her, moment three" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="img-placeholder-label">photo3.jpg</div>
+        </div>
+        <figcaption>fuckin love your smile</figcaption>
+      </figure>
+ 
+      <figure class="polaroid p4">
+        <div class="polaroid-photo">
+          <img src="photo4.jpeg" alt="photo of her, moment four" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="img-placeholder-label">photo4.jpg</div>
+        </div>
+        <figcaption>wish i could kiss you rn</figcaption>
+      </figure>
+ 
+      <figure class="polaroid p5">
+        <div class="polaroid-photo">
+          <img src="photo5.jpeg" alt="photo of her, moment five" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="img-placeholder-label">photo5.jpg</div>
+        </div>
+        <figcaption>forever yours</figcaption>
+      </figure>
+ 
+    </div>
+  </section>
+ 
+  <!-- ===== CLOSING ===== -->
+  <section class="closing">
+    <p class="script closing-line">btw tap anywhere.</p>
+    <p class="closing-sub"></p>
+  </section>
+ 
+  <footer class="footer">
+    <p>made with a lot of love, love you forever</p>
+  </footer>
+ 
+</main>
+ 
+<!-- ============ MUSIC PLAYER ============ -->
+<audio id="bgMusic" src="music.mp4" loop preload="auto"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="play music">
+  <div class="music-icon">
+    <span></span><span></span><span></span>
+  </div>
+</button>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
